@@ -1,6 +1,14 @@
 var calcolaBtn = document.getElementById('btn-calcola');
 calcolaBtn.addEventListener('click', function(){
 
+    var validaNome= document.getElementById('your-burger-name');
+    var valoreNome = validaNome.value;
+    
+    if( valoreNome == ""){
+        alert("Il Nome inserito non è corretto!");
+        
+    }else {
+
     var prezzoPanino = 8;
     var addOnPanino= document.getElementsByClassName('addon');
 
@@ -32,10 +40,9 @@ calcolaBtn.addEventListener('click', function(){
 
     if(verifyCupon == true){
         prezzoPanino -= (prezzoPanino * 0.1); 
-    }
-
+    } 
     // stampo prezzo finale
     document.getElementById('prezzo-finale').innerHTML = prezzoPanino.toFixed(2) + ' €';
 
 
-});
+}});
