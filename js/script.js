@@ -17,11 +17,25 @@ calcolaBtn.addEventListener('click', function(){
         }
 
     }
-    // stampo prezzo finale
-    document.getElementById('prezzo-finale').innerHTML = prezzoPanino.toFixed(2) + ' €';
 
     // Creo array codici sconto:
     var codSconto= ["Sconto10","12345", "ABCDE"];
+
+    // salvo l'imput per confronto
+    var inputCliente= document.getElementById('discount');
+
+    var coupon = inputCliente.value;
+
+    // faccio verifiche
+    
+    var verifyCupon= codSconto.includes(coupon);
+
+    if(verifyCupon == true){
+        prezzoPanino -= (prezzoPanino * 0.1); 
+    }
+
+    // stampo prezzo finale
+    document.getElementById('prezzo-finale').innerHTML = prezzoPanino.toFixed(2) + ' €';
 
 
 });

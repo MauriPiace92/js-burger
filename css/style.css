@@ -1,9 +1,10 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* COMMON */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -14,7 +15,7 @@ body{
     height: 100vh;
     position: relative;
 }
-
+/* HEADER */
 header{
     background-color:#fdbc41 ;
     height: 100px;
@@ -53,6 +54,52 @@ main h3{
 
 }
 
+.discount-coupon{
+    text-align: center;
+    margin: 20px 0;
+
+}
+.discount-coupon input{
+    background-color: burlywood;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    margin-left:10px;
+}
+
+.button-calcola{
+    text-align: center;
+}
+
+button {
+	box-shadow: 3px 4px 0px 0px burlywood;
+	background:linear-gradient(to bottom, burlywood 5%, #f24437 100%);
+	background-color:burlywood;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:21px;
+	padding:11px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* FOOTER */
 footer{
     position: absolute;
     bottom:0;
