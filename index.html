@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>js-Burger</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Crea il Tuo Hamburger</h1>
+        </header>
+
+        <main>
+            <div class="name-burger">
+                <label for="your-burger-name"></label>
+                <input id="your-burger-name" type="text" placeholder="Come chiami il tuo burger?">
+            </div>
+
+            <h3>Aggiungi ingredienti:</h3>
+
+            <div class="ingredients">
+
+                <div class="ingredient-element">
+                    <img src="img/cheese.svg" alt="cheese img">
+                    <label for="cheese">Cheese </label>
+                    <input id="cheese" type="checkbox" class="addon" value="2">
+                </div>
+
+                <div class="ingredient-element">
+                    <img src="img/tomato.svg" alt="cheese img">
+                    <label for="tomato">tomato </label>
+                    <input id="tomato" type="checkbox" class="addon" value="2">
+                </div>
+
+                <div class="ingredient-element">
+                    <img src="img/fried-egg (1).svg" alt="cheese img">
+                    <label for="fried-egg">fried-egg </label>
+                    <input id="fried-egg" type="checkbox" class="addon" value="2">
+                </div>
+                <div class="ingredient-element">
+                    <img src="img/lettuce.svg" alt="cheese img">
+                    <label for="lettuce">lettuce </label>
+                    <input id="lettuce" type="checkbox" class="addon" value="2">
+                </div>
+                <div class="ingredient-element">
+                    <img src="img/mustard.svg" alt="mustard img">
+                    <label for="mustard">mustard </label>
+                    <input id="mustard" type="checkbox" class="addon" value="1">
+                </div>
+                <div class="ingredient-element">
+                    <img src="img/ketchup.svg" alt="ketchup img">
+                    <label for="ketchup">ketchup</label>
+                    <input id="ketchup" type="checkbox" class="addon" value="1">
+                </div>
+
+                <div class="discout-coupon">
+                    <label for="discount">Discount Coupon</label>
+                    <input id="discount" type="text" placeholder="Inserisci codice sconto">
+                </div>
+
+                <div class="button-calcola">
+                    <button id="btn-calcola">Calcola</button>
+                </div>
+
+
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="container">
+                <div class="totale-spesa">Totale Spesa:</div>
+                <div id="prezzo-finale"></div>
+            </div>
+
+        </footer>
+
+
+        <script text="text/javascript" src="js/script.js"></script>
+
+    </div>
+</body>
+</html>
